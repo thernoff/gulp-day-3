@@ -1,3 +1,21 @@
-.header
-    h1 Первый урок
-    p Добро пожаловать на курс по Gulp
+header.header-wrapper
+    .container
+        .header
+            a(href="#")
+                img(src="img/logo/portland.svg", alt="logo")
+
+            nav.nav
+                a(href="#").nav__link Home
+                a(href="#").nav__link Devices
+                a(href="#").nav__link About Us
+                a(href="#").nav__link Guarantee
+                a(href="#").nav__link Delivery & Payment
+
+            .header-right
+                .header-cart
+                    .header-cart__icon
+                        img(src="img/icons/shopping-cart-icon.svg", alt="Cart")
+                    .header-cart__title Cart
+                    .header-cart__counter 0
+
+            a.button Sign In

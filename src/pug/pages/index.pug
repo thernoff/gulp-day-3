@@ -6,3 +6,30 @@ block variables
 block content
   include ../sections/header.pug
   include ../sections/topmenu.pug
+
+  .container
+    .row
+      .col-md-3
+        +product-card("apple-tv.jpg", "Apple TV 32Gb", "Black", "$49.99")
+      .col-md-3
+        +product-card("watch.jpg", "Pebble Time", "Red", "$29.99")
+      .col-md-3
+        +product-card("zendure.jpg", "Zendure 4-Port USB", "Black", "$39.99")
+      .col-md-3
+        +product-card("analyzer.jpg", "Withings Smart Body Analyzer ws-50", "Black", "$39.99")
+      .col-md-3
+        +product-card("ollo.jpg", "Ollo Clip New", "Silver", "$19.99")
+      .col-md-3
+        +product-card("tracker.jpg", "Fitbit Charge HR Heart Rate and Activity Tracker", "Black", "$19.99")
+      .col-md-6
+          .product-card-large
+            .product-card-large__img(style="background-image: url('../img/products/jbl-bg.jpg');")
+              .product-card-large__price $39.99              
+            .product-card-large-content
+              div
+                .product-card-large__title JBL Charge 2+
+                .product-card-large__color Black
+              .btn-group
+                .button 16 Gb
+                .button New One
+                .button Buy Now

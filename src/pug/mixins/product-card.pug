@@ -1,0 +1,9 @@
+mixin product-card(name, title, color, price)
+
+  .product-card
+    .product-card__img
+      img(src="./img/products/" + name, alt="")
+    .product-card-content
+      .product-card__title= title
+      .product-card__color= color
+      .product-card__price= price

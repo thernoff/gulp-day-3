@@ -22,14 +22,4 @@ block content
       .col-md-3
         +product-card("tracker.jpg", "Fitbit Charge HR Heart Rate and Activity Tracker", "Black", "$19.99")
       .col-md-6
-          .product-card-large
-            .product-card-large__img(style="background-image: url('../img/products/jbl-bg.jpg');")
-              .product-card-large__price $39.99              
-            .product-card-large-content
-              div
-                .product-card-large__title JBL Charge 2+
-                .product-card-large__color Black
-              .btn-group
-                .button 16 Gb
-                .button New One
-                .button Buy Now
+        +product-card-large('jbl-bg.jpg', 'JBL Charge 2+', 'Black', '$39.95', '16 GB')
